@@ -1,11 +1,14 @@
 import React from "react";
+import ToDoContainer from "./components/UI/ToDoContainer";
 
+import { AppContext, AppProvider } from "./store/AppContext";
 function App() {
   return (
-    <div className="p-4 text-center">
-      <h1 className="text-xl font-bold mb-2">Vite + React</h1>
-      <h2>Edit this file to get started!</h2>
-    </div>
+    <AppProvider>
+      <div className="p-4 text-center bg-[#f6f6f8] min-h-screen">
+        <ToDoContainer />
+      </div>
+    </AppProvider>
   );
 }
 
