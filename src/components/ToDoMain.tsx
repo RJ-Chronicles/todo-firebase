@@ -68,7 +68,11 @@ const TodoMain: React.FC = (props: any) => {
         <LargeButton onClick={newTodoItemHandler} text={"Add!"} />
       </div>
       <div className="overflow-y-auto max-h-96 my-10">
-        <ListItems ListItemProps={items} />
+        {items.length === 0 ? (
+          <h1>No Data To Display</h1>
+        ) : (
+          <ListItems ListItemProps={items} />
+        )}
       </div>
     </div>
   );
