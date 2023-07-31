@@ -19,9 +19,9 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full flex justify-between min-h-24 bg-[#666699] p-5 text-white rounded-sm">
-      <div className="w-1/2 md:w-8/12 flex md:space-x-5 ">
-        <div className="md:flex justify-center items-center hidden ">
+    <div className="w-full flex justify-between space-x-2 md:space-x-3 min-h-24 bg-[#666699] p-5 text-white rounded-sm">
+      <div className="w-1/2 md:w-7/12 flex md:space-x-2 ">
+        <div className="hidden md:flex justify-center items-center  ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -47,7 +47,7 @@ const Footer = () => {
           value={todoItem}
         />
       </div>
-      <div className="w-1/2 md:w-4/12 flex justify-between items-center">
+      <div className="w-1/2 md:w-5/12 flex justify-between items-center">
         <SmallButton text="All" active={active} onClick={allItemsHandler} />
         <SmallButton
           text="Active"
