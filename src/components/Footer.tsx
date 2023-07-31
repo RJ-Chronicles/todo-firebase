@@ -20,8 +20,8 @@ const Footer = () => {
 
   return (
     <div className="w-full flex justify-between min-h-24 bg-[#666699] p-5 text-white rounded-sm">
-      <div className="w-8/12 flex space-x-5">
-        <div className="flex justify-center items-center">
+      <div className="w-1/2 md:w-8/12 flex md:space-x-5 ">
+        <div className="md:flex justify-center items-center hidden ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -41,13 +41,13 @@ const Footer = () => {
         <TextField
           type="text"
           placeholder="search"
-          width="w-80"
+          width="w-full"
           padding="py-0"
           setText={setTodoItem}
           value={todoItem}
         />
       </div>
-      <div className="w-4/12 flex justify-between items-center">
+      <div className="w-1/2 md:w-4/12 flex justify-between items-center">
         <SmallButton text="All" active={active} onClick={allItemsHandler} />
         <SmallButton
           text="Active"
